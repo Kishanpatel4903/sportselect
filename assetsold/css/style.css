@@ -1,0 +1,513 @@
+.maincontainer
+{
+	position: relative;
+}
+.leftsidebar
+{
+	width: 260px;
+	/*border-right: 1px solid rgba(0,0,0,0.05);*/
+	height: 100vh;
+	display: inline-block;
+	/*position: absolute;*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	height: 100%;
+	background: #fff;
+}
+.rightpart
+{
+	width:100%;
+	padding-left: 260px;
+	padding-top: 55px;
+}
+.topbarmain
+{
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	background: #43819d;
+	height: 55px;
+	padding: 7px 15px;
+	padding-left: 260px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.logopart,
+.notificationtop,
+.notificationtop a:hover
+{
+	color: #fff;
+}
+.logopart a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+.searchbar input
+{
+	background: #f2f4f8 !important;
+}
+.meprofileimg li .nav-link img
+{
+	border:2px solid #fff;
+}
+/**/
+
+body
+{
+	font-family: "Avenir Next W01","Proxima Nova W01",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+	background: #f2f4f8;
+}
+a
+{
+	color: inherit;
+}
+input:focus
+{
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.topserchandnoti
+{
+
+}
+.topserchandnoti .notificationtop
+{
+	display: inline-block;
+}
+.topserchandnoti .notificationtop li
+{
+	list-style-type: none;
+	width: 50px;
+}
+.topserchandnoti .notificationtop li .notificationcount
+{
+	background-color: #e65252;
+	color: #fff;
+	border-radius: 6px;
+	font-weight: 500;
+	position: absolute;
+	top: -2px;
+	right: 0;
+	padding: 4px 4px;
+	vertical-align: middle;
+	font-size: .72rem;
+	line-height: 1;
+}
+.topserchandnoti .notificationtop li .noti-boxmenu
+{
+	top: 8px !important;
+	right: 0px;
+	left: unset;
+	width: 230px;
+	border: none;
+	border-radius: 4px;
+	padding-bottom: 0px;
+	padding: 15px 10px;
+	-webkit-transform: translate3d(0%, 110%, 0);
+	transform: translate3d(0%, 110%, 0);
+	background-color: #fff;
+	-webkit-box-shadow: 0px 5px 75px 0px rgba(12,76,140,0.21), 0px 3px 7px 0px rgba(12,76,140,0.14);
+	box-shadow: 0px 5px 75px 0px rgba(12,76,140,0.21), 0px 3px 7px 0px rgba(12,76,140,0.14);
+}
+.topserchandnoti .noti-boxmenu .notificationboxsingle
+{
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	padding: 10px 0;
+}
+.topserchandnoti .noti-boxmenu .notificationboxsingle:first-child
+{
+	padding: 0 0 10px 0;
+}
+.topserchandnoti .notificationboxallview
+{
+	color: #334152 !important;
+	padding: 10px 0 0;
+}
+.topserchandnoti .notitficationproimg
+{
+	width: 45px;
+	height: 45px;
+	margin-right: 10px;
+	display: inline-block;
+	float: left;
+}
+.topserchandnoti .notitficationproimg img
+{
+	width: 100%;
+}
+.topserchandnoti .notitficationdetail
+{
+	width: 153px;
+	display: inline-block;
+}
+.topserchandnoti .message p
+{
+	color: #047bf8;
+	font-size: .54rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+.topserchandnoti .nameofnotification
+{
+	color: #334152;
+	font-size: 1rem;
+	margin-bottom: 0px;
+	font-family: "Avenir Next W01","Proxima Nova W01",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+.logopart
+{
+	padding: 14px 1rem 14px 1.7rem;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	height: 55px;
+	background: #43819d;
+}
+.logopart i
+{
+	margin-right: 5px;
+}
+.profilepart
+{
+	padding: 1rem;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.profileimg
+{
+	width: 45px;
+	height: 45px;
+	padding: 3px;
+	border: 1px solid;
+	border-radius: 100px;
+	display: inline-block;
+	float: left;
+}
+.profileimg img
+{
+	width: 100%;
+	border-radius: 100px;
+}
+.detailsofprofile
+{
+	display: inline-block;
+	padding-left: 10px;
+	width: 150px;
+}
+.detailsofprofile a
+{
+	text-decoration: none;
+}
+.detailsofprofile .first
+{
+	font-size: .9rem;
+	font-weight: 500;
+	padding-top: 5px;
+	margin-bottom: 0px;
+}
+.detailsofprofile .second
+{
+	font-size: .63rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+/**/
+
+
+.searchbar
+{
+	position: relative;
+	display: inline-block;
+}
+.searchbar i
+{
+	line-height: 1;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 16px;
+	content: "\e92c";
+	color: rgba(0,0,0,0.4);
+}
+.searchbar input
+{
+
+	background: rgba(121,138,185,0.07);
+	border: none;
+	border-radius: 100px;
+	height: 37px;
+	width: 220px;
+	padding: 8px 15px 8px 40px;
+	font-family: "Avenir Next W01","Proxima Nova W01",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+	font-weight: 400;
+}
+
+.profilemoreoption
+{
+	display: inline-block;
+	float: right;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+.leftsidebar nav ul
+{
+	width: 100%;
+}
+.leftsidebar nav ul li a i
+{
+	margin-right: 15px;
+}
+.navbar-nav .dropdown-menu
+{
+	left: 100%;
+	top: 0;
+}
+.navbar-nav .dropdown-menu
+{
+	z-index: 9999;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background-color: #1b55e2;
+    color: #fff;
+    text-align: left;
+    -webkit-box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.2);
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+.navbar-nav .dropdown-menu .dropdown-item
+{
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	color: #fff;
+	background: transparent;
+    display: block;
+    padding: 12px 50px;
+    font-size: .99rem;
+    position: relative;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+.leftsidebar nav ul li .dropdown-toggle::after
+{
+	float: right;
+	margin-top: 10px;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover:before
+{
+	opacity: 1;
+}
+.navbar-nav .dropdown-menu .dropdown-item:before
+{
+	content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #FBB463;
+    border-color: #FBB463;
+    position: absolute;
+    left: 28px;
+    top: 50%;
+    -webkit-transform: translate(-10px, -50%);
+    transform: translate(-10px, -50%);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.sub-menu-header
+{
+	    font-size: 2.4rem;
+    color: rgba(255,255,255,0.2);
+    padding: 5px 45px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Avenir Next W01","Proxima Nova W01","Rubik",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.leftsidebar nav:focus,
+.navbar-toggler:focus, 
+.navbar-toggler:hover
+{
+	outline: none !important;
+}
+.leftsidebar nav ul li .dropdown-toggle::after {
+    content: "\e64b";
+    font-family: 'themify';
+    font-size: 10px;
+    right: 5px;
+    border: none;
+}
+.menunamespan
+{
+	text-transform: capitalize;
+}
+.leftside .nav-link:focus, .leftside .nav-link:hover
+{
+	color: #fff;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover
+{
+	transform: translateX(-5px);
+}
+.meprofileimg
+{
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.meprofileimg li
+{
+	list-style-type: none;
+}
+.meprofileimg li .nav-link
+{
+	padding: 0;
+}
+.meprofileimg li .nav-link img
+{
+	width: 100%;
+	border-radius: 100px;
+}
+.meprofileimg li .profi-boxmenu
+{
+	    top: 8px !important;
+    right: 0px;
+    left: unset;
+    width: 230px;
+    border: none;
+    border-radius: 4px;
+    padding-bottom: 0px;
+    padding: 15px 10px;
+    background: #1b55e2;
+        font-size: .9rem;
+    text-align: left;
+    overflow:hidden;
+}
+.meprofileimg li .profi-boxmenu li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.meprofileimg li .profi-boxmenu li a {
+    display: block;
+    white-space: nowrap;
+    padding: 10px 10px 10px 10px;
+    line-height: 1;
+    color: #fff;
+    font-size: .9rem;
+    text-decoration: none;
+}
+.meprofileimg li .profi-boxmenu li a i {
+       color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    font-size: 22px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.meprofileimg li .profi-boxmenu li a i+span {
+    padding-right: 10px;
+}
+.meprofileimg li .profi-boxmenu li a span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: .9rem;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.meprofileimg li .profi-boxmenu li a:hover i {
+    color: #fff;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.meprofileimg li .profi-boxmenu li a:hover span {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+}
+.meprofileimg li .profi-boxmenu li:last-child {
+    border-bottom: none;
+}
+.icon-w {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    color: rgba(0,0,0,0.08);
+    font-size: 100px;
+}
+.icon-w i {
+    vertical-align: middle;
+}

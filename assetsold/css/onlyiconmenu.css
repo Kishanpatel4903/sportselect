@@ -1,0 +1,92 @@
+.onlyiconmenuwithtop .onlyiconmenu
+{
+   position: fixed;
+}
+
+
+
+
+/**/
+
+.onlyiconmenuwithtop .onlyiconmenu
+{
+    width: 70px;
+    background: #fff;
+}
+.onlyiconmenuwithtop .onlyiconmenu .detailsofprofile,
+.onlyiconmenuwithtop .onlyiconmenu .logopart b,
+.onlyiconmenuwithtop .onlyiconmenu .profilemoreoption,
+.onlyiconmenuwithtop .onlyiconmenu .menunamespan,
+.onlyiconmenuwithtop .onlyiconmenu nav ul li .dropdown-toggle::after
+{
+    display: none;
+}
+.onlyiconmenuwithtop .onlyiconmenu .logopart
+{
+    padding: 5px;
+    display: flex;
+    vertical-align: middle;
+}
+.onlyiconmenuwithtop .onlyiconmenu .logopart i
+{
+    font-size: 30px;
+    margin: auto;
+}
+.onlyiconmenuwithtop .onlyiconmenu  .profilepart
+{
+    padding: 12px;
+    display: flex;
+    width: 100%;
+    vertical-align: middle;
+}
+.onlyiconmenuwithtop .onlyiconmenu .profilepart .profileimg
+{
+    margin: auto;
+}
+.onlyiconmenuwithtop .onlyiconmenu nav
+{
+    padding: 0;
+    text-align: center;
+}
+.onlyiconmenuwithtop .onlyiconmenu .navbar-expand-lg .navbar-nav .nav-link
+{
+    padding: 15px;
+}
+.onlyiconmenuwithtop .onlyiconmenu nav ul li
+{
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 15px;
+}
+.onlyiconmenuwithtop .onlyiconmenu nav ul li a i
+{
+    margin-right: 0;
+    font-size: 22px;
+    color: #0073ff;
+}
+.onlyiconmenuwithtop .rightpart 
+{
+    width: 100%;
+    padding-left: 70px;
+}
+.onlyiconmenuwithtop .rightpart .topbarmain
+{
+    /*background: #fff;*/
+}
+
+
+@media(max-width: 767px)
+{
+ .leftsidebar,
+ .topbarmain
+ {
+    position: relative;
+ }   
+ .topbarmain
+ {
+    padding-left: unset;
+ }
+ .onlyiconmenuwithtop .onlyiconmenu
+ {
+    width: 100%;
+ }
+}

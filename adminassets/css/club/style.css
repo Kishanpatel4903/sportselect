@@ -1,0 +1,1345 @@
+body
+{
+	font-family: 'Poppins', sans-serif !important;
+}
+/*.backimg
+{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}*/
+.title
+{
+	font-size: 26px;
+	margin-top: 40px;
+	font-weight: 600;
+}
+.leftsideprofile
+{
+	background-color: #fff;
+	    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 7px;
+}
+.leftsideprofile .maindiv
+{
+	padding: 15px;
+}
+.playername
+{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 0;
+	display: inline-block;
+}
+.nameandsearchbar i
+{
+	/*float: right;*/
+	font-size: 18px;
+}
+.profilesec
+{
+	margin-top: 15px;
+    margin-bottom: 0;
+}
+.playerprofile
+{
+	margin-right: 22px;
+}
+.playerprofile
+{
+	width: 23%;
+	float: left;
+	display: inline-block;
+}
+.playerinfo
+{
+	width: 100%;
+	display: inline-block;
+}
+.playerprofile img
+{
+	border-radius: 5px;
+	width: 100%;
+	float: left;
+}
+.playerinfo
+{
+	display: inline-block;
+}
+.playerinfo .maindivinfo
+{
+	float: left;
+	width: 100%;
+}
+.playercountry
+{
+    display: inline-block;
+    float: right;
+}
+.playercountry img
+{
+	width: 55px;
+	margin-right: 10px;
+}
+.playercountry span
+{
+    display: inline-block;
+}
+.fillstar
+{
+	color: #ecec00;
+}
+
+
+.playerinfo table tr
+{
+	border-bottom: 1px solid #ddd;
+}
+.playerinfo table tr:last-child
+{
+	border-bottom: none;
+}
+.playerinfo table tr td
+{
+	padding: 10px 0;
+}
+
+.playerinfo table tr
+{
+    display: inline-block;
+    width: 48%;
+    float: left;
+    /*margin-right: 15px;*/
+    border-bottom: 1px solid #ddd;
+}
+.playerinfo table tr:nth-child(odd)
+{
+    margin-right: 15px;
+}
+.playerinfo table tr:nth-child(even)
+{
+    margin-right: 0;
+}
+.playerinfo table tr:nth-last-child(2),
+.playerinfo table tr:last-child
+{
+    border-bottom: none;
+}
+.playerinfo table tr td:first-child
+{
+    width: 50%;
+    float: left;
+    padding: 7px 0;
+    text-transform: capitalize;
+}
+.playerinfo table tr td:last-child
+{
+    width: 50%;
+    float: right;
+    padding: 7px 0;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contractname table
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.skillsdetails
+{
+    display: inline-block;
+    width: 100%;
+}
+
+/*.skillsdetails .firstpart,*/
+.skillsdetails .secondpart
+{
+	width: 100%;
+	display: inline-block;
+    /*padding-top: 26px;
+    padding-bottom: 129px;*/
+}
+.skillsdetails .secondpart
+{
+	/*float: right;*/
+}
+/*.skillsdetails .firstpart table,*/
+.skillsdetails .secondpart table
+{
+	width: 100%;
+}
+/*.skillsdetails .firstpart table tr,*/
+.skillsdetails .secondpart table tr
+{
+	border-bottom: 1px solid #ddd;
+}
+/*.skillsdetails .firstpart table tr td,*/
+.skillsdetails .secondpart table tr td
+{
+	padding: 6px 0;
+}
+/*.skillsdetails .firstpart table tr td:first-child,*/
+.skillsdetails .secondpart table tr td:first-child
+{
+	text-transform: capitalize;
+    font-weight: 600;
+}
+/*.skillsdetails .firstpart table tr:last-child,*/
+.skillsdetails .secondpart table tr:last-child
+{
+	border-bottom: none;
+}
+/*.skillsdetails .firstpart table tr td:last-child,*/
+.skillsdetails .secondpart table tr td:last-child
+{
+	text-align: right;
+}
+.groundimg
+{
+	display: inline-block;
+	float: left;
+	/*margin-right: 15px;*/
+	box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    
+}
+.Leaguedetailsfirst table
+{
+    width: 100% !important;
+    float: left;
+}
+
+.Leaguedetailsfirst .secondtable
+{
+    float: right !important;
+}
+.Leaguedetailssecond
+{
+    margin-top: 15px;
+}
+.Leaguedetails
+{
+
+    text-transform: capitalize;
+	background-color: #fff;
+	display: inline-block;
+	width: 100%;
+	float: left;
+	padding: 15px;
+	box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+	border-radius: 7px;
+    padding-bottom: 15px;
+}
+.Leaguedetails table
+{
+	width: 100%;
+}
+.Leaguedetails table tr th
+{
+	padding: 0 0 10px 0;
+}
+.Leaguedetails table tr th button
+{
+	float: right;
+}
+.Leaguedetails table tr
+{
+	border-bottom: 1px solid #ddd;
+}
+.Leaguedetails table tr:last-child
+{
+	border-bottom: none;
+}
+.Leaguedetails table tr td
+{
+	padding: 6px;
+}
+.Leaguedetails table tr td:first-child
+{
+	text-align: left !important;
+	width: 46%;
+    font-weight: 600;
+}
+.Leaguedetails table tr td:last-child
+{
+	text-align: right;
+}
+/*.Leaguedetails table tr:last-child td
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+.clear
+{
+	clear: both;
+}
+
+
+.searchiconplayerinfo
+{
+	display: inline-block;
+	float: right;
+}
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    background-color: #013791;
+    border-radius: 30px;
+    padding: 0px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 300px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+    .nav-tabs
+    {
+    	margin-top: 30px;
+    	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+    {
+    	font-weight: 600;
+    	border: none;
+    }
+    .nav-tabs .nav-link
+    {
+    	color: #000;
+    	border: none;
+    }
+    .tab-content
+    {
+    	background: #fff;
+    	padding: 15px;
+    	box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 0 0 7px 7px;
+    }
+   
+    
+
+
+
+    .userunactive
+    {
+    	font-weight: 600;
+    font-size: 14px;
+    color: red;
+    }
+    .availability-dots
+    {
+    	width: 10px;
+    	height: 10px;
+    	border-radius: 100px;
+    	background-color: green;
+    	display: inline-block;
+    }
+    .playerdatabox
+    {
+
+    	text-align: center;
+    	padding: 15px;
+        margin-bottom: 15px;
+    	position: relative;
+    	overflow: hidden;
+    	    border-radius: 7px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    background: #fff;
+    }
+    .box-modern-circle-1 {
+    left: 0;
+    bottom: 0;
+    width: .54em;
+    height: .54em;
+    background: #daeaff;
+}
+    .box-modern-circle-2 {
+    top: 0;
+    right: 0;
+    width: .54em;
+    height: .54em;
+    background: #f9f9ef;
+}
+.box-modern-circle-1, .box-modern-circle-2 {
+    position: absolute;
+    border-radius: 50%;
+}
+    .playerdatabox .first
+    {
+    	font-weight: 600;
+    	font-size: 16px;
+    	margin-bottom: 0;
+    	z-index: 9;
+    }
+    .playerdatabox .second
+    {
+    	    font-size: 22px;
+    font-weight: 600;
+    z-index: 9;
+    margin-bottom: 0;
+    margin-top: 15px;
+    }
+    .subtext
+    {
+    	font-size: 14px;
+    }
+
+
+
+.countdown
+{
+	margin-bottom: 0;padding: 0;
+}
+.countdown li
+{
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
+ul.countdown li span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+ul.countdown li.seperator {
+    font-size: 27px;
+    line-height: 20px;
+    vertical-align: top;
+}
+.countdown li p
+{
+	margin-bottom: 0;
+}
+.salary-amount
+{
+	color: #00e800;
+
+}
+.profileinfo
+{
+	margin-bottom: 15px;
+}
+.profileinfo table tr td:first-child
+{
+	
+	text-transform: capitalize;
+    font-weight: 600;
+}
+.profileinfo table tr td:last-child
+{
+	float: right;
+}
+
+
+.signnow-player
+{
+	margin: 0;
+	border-radius: 100px;
+	border: none;
+	padding: 8px 30px;
+	background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+	color: #fff;
+	box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+.signnow-player:hover
+{
+	background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+}
+.attributebtn
+{
+	margin: 15px 0;
+	border-radius: 100px;
+	border: none;
+	padding: 8px 26px;
+	background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+	color: #fff;
+	box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+}
+
+
+
+
+footer
+{
+	background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+	padding: 15px 0;
+	margin-top: 30px;
+}
+footer p
+{
+	margin-bottom: 0;
+	text-align: center;
+	color: #fff;
+}
+.nav-tabs li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    min-width: 200px;
+}
+.nav-tabs a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+}
+.nav-tabs li a
+{
+	padding-left: 0;
+}
+.nav-tabs li a.active
+{
+	background-color: transparent !important;
+	border: none;
+}
+.nav-tabs li .active::after
+{
+	background: #fff;
+}
+.nav-tabs li a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    outline: 1px solid transparent;
+    border-radius: 10px 10px 0 0;
+    background: #f9f9ef;
+    content: '';
+    -webkit-transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+    transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    }
+
+
+
+
+    .modal-header
+    {
+    	background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+    	color: #fff;
+    	font-weight: 600;
+    }
+    .modal-header .modal-title
+    {
+    	text-align: center;
+    	width: 100%;
+    }
+    .modal-header .close
+    {
+    	color: #fff;
+    	opacity: 1;
+    }
+    .modal-content
+    {
+    	border-radius: 7px;
+    	border: none;
+    }
+
+    .allbtnsame
+    {
+	margin: 0;
+	border-radius: 100px;
+	border: none;
+	padding: 8px 30px;
+	background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+	color: #fff;
+	box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+.allbtnsame:hover
+{
+	background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+}
+.orangebackcolor
+{
+	background: #0f1d71;
+}
+.backcolor
+{
+	color: #000;
+}
+.colorwhite
+{
+	color: #fff !important;
+}
+.groundimg
+	{
+		width: auto;
+        /*margin-top: 30px;*/
+	}
+/*.groundimg img
+	{
+		width: 100%;
+	}*/
+@media(min-width: 992px) and (max-width: 1220px)
+{
+	.playerinfo
+	{
+		width: 64%;
+	}
+	.groundimg
+	{
+		width: 30%;
+	}
+	.groundimg img
+	{
+		width: 100%;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+
+	.playerinfo, .playerprofile, .groundimg, .Leaguedetails
+	{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.groundimg
+	{
+		box-shadow: none;
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+.technical table
+{
+    width: 100%;
+}
+.technical table tr
+{
+    display: inline-block;
+    width: 24%;
+    margin-right: 1%;
+}
+.technical table tr td
+{
+    width: 49% !important;
+    display: inline-block;
+}
+.technical table tr td:last-child
+{
+    text-align: right;
+}
+
+
+
+
+
+.referencepart
+{
+    width: 100%;
+    display: inline-block;
+}
+.referencepart .imgbox
+{
+    display: inline-block;
+    float: left;
+}
+.referencepart img
+{
+    border-radius: 7px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.referencepart .detailsbox
+{
+    display: inline-block;
+    float: left;
+    /*width: 60%;*/
+    width: 100%;
+}
+.referencepart table
+{
+    width: 100%;
+    /*display: inline-block;*/
+}
+.referencepart table tr th:first-child
+{
+    
+}
+
+.technical h4
+{
+    margin-bottom: 15px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card-header
+{
+    background-color:#e6e6e6;
+    padding: 0.15rem;
+}
+.contracttab  .tab-content
+{
+    background: transparent;
+    padding-bottom: 0;
+}
+
+.contracttab
+{
+    padding-bottom: 0;
+}
+.backcolordark
+{
+    background: #f9f9ef;
+    padding-bottom: 15px;
+}
+
+.contractmodal h4
+{
+    text-transform: capitalize;
+}
+.contractmodal p
+{
+    font-size: 14px;
+}
+.showstatistics
+{
+    margin: 0;
+    border-radius: 100px;
+    border: none;
+    padding: 7px 12px;
+    background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+    color: #fff;
+    box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.characteristicsname
+{
+    box-shadow: 0 0 2px #eaeaea;
+    padding: 15px;
+    border-radius: 3px;
+}
+.characteristicsname p
+{
+    margin-bottom: 0;
+    display: inline-block;
+}
+.characteristicsname p a
+{
+    text-decoration: none;
+    color: #000;
+}
+.characteristicsname p:last-child
+{
+    float: right;
+}
+.characteristicsname p:last-child i
+{
+    margin-left: 5px;
+}
+.social-media
+{
+    margin-left: 10px !important;
+}
+.social-media i
+{
+    margin-right: 10px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ground position fixed*/
+.groundplayerpotion 
+{
+    position: relative;
+}
+.groundplayerpotion i
+{
+    position: absolute;
+    opacity: 0.4;
+}
+.groundplayerpotion i.active
+{
+    color: red;
+    opacity: 1;
+}
+.groundplayerpotion i.current
+{
+    color: blue;
+    opacity: 1;
+}
+.groundplayerpotion .goalkeeper
+{
+    bottom: 6%;
+    right: 47%;
+}
+.groundplayerpotion .centerback
+{   
+    bottom: 15%;
+    right: 47%;   
+}
+.groundplayerpotion .leftback
+{
+    bottom: 25%;
+    left: 20%;
+}
+.groundplayerpotion .rightback
+{
+    bottom: 25%;
+    right: 20%;
+}
+.groundplayerpotion .centermidfield1
+{
+    bottom: 47%;
+    right: 30%;
+}
+.groundplayerpotion .centermidfield2
+{
+    bottom: 47%;
+    left: 30%;
+}
+.groundplayerpotion .leftwing
+{
+    bottom: 52%;
+    left: 8%; 
+    
+}
+.groundplayerpotion .rightwing
+{
+    
+    bottom: 52%;
+    right: 8%;   
+}
+.groundplayerpotion .centerforward
+{
+    bottom: 70%;
+    left: 47%;   
+}
+.groundplayerpotion .striker
+{
+    bottom: 80%;
+    right: 32%;   
+}
+.groundplayerpotion .centerattack
+{
+    bottom: 80%;
+    left: 32%;     
+}
+
+
+
+
+
+
+
+
+
+.countryclubday
+{
+    background: #fff;
+    border-radius: 7px;
+    display: inline-block;  
+    width: 72%;
+    /*margin-top: 34px;*/
+}
+.countryclubday .commondthreepart
+{
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.commonimage
+{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto
+}
+.commonimage img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+}
+.commondthreepart .first
+{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.commondthreepart .second
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.agentplacingmaindiv
+{
+    display: inline-block;
+    width: 100%;
+    /*margin-top: 15px;*/
+    height: 85px;
+    padding: 15px;
+}
+.disinb
+{
+    display: inline-block;
+}
+.agentplacingmaindiv .buttontypeeffect
+{
+    width: auto;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+.agentplacingmaindiv .disinb:last-child .buttontypeeffect
+{
+    margin-right: 0px !important;
+}
+.agentplacingmaindiv .buttontypeeffect p
+{
+    font-size: 15.2px;
+}
+
+
+.last-towbtn td
+{
+    padding-top: 15px !important;
+}
+.card-header button.btn-link:after {
+    font-family: 'FontAwesome';
+    content: "\f078";    
+    float: right;
+}
+.agentplacingmaindiv .card-header .btn-link
+{
+    width: 100%;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+}
+.agentplacingmaindiv .card
+{
+    margin: 15px 0;
+}
+.agentplacingmaindiv .card-header
+{
+    background: #fff;
+    
+}
+.agentplacingmaindiv .card-body
+{
+    background: #f9f9ef;
+}
+.producingagentmodelsame table td, .producingagentmodelsame table th
+{
+    text-transform: capitalize;
+    text-align: center;
+}
+.producingagentmodelsame .modal-title
+{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subtab
+{
+    box-shadow: none;
+}
+.subtab .tab-pane .accordion
+{
+    width: 70%;
+    display: inline-block;
+}
+.subtab .tab-pane .playerdatabox
+{
+    width: 28%;
+    float: right;
+    display: inline-block;
+}
+.buttontypeeffect {
+  transition: all 0.2s ;
+}
+/* 3D */
+.btnBlueGreen.btnPush {
+  box-shadow: 0px 5px 0px 0px #e8e8e9;
+    background: #f9f9ef;
+}
+.btnPush:hover {
+  margin-top: 4px;
+}
+.btnBlueGreen.btnPush:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+.characteristicspanelbody
+{
+    min-height: 110px;
+}
+.modeltablestar table
+{
+    width: 100%;
+}
+.modeltablestar table tr
+{
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-right: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.modeltablestar table tr:nth-child(even)
+{
+    margin-right: 0;
+}
+
+.modeltablestar table tr td:first-child
+{
+    width: 80%;
+    float: left;
+    padding: 7px 0;
+    text-transform: capitalize;
+}
+.modeltablestar table tr td:last-child
+{
+    width: 20%;
+    float: right;
+    padding: 7px 0;
+}
+
+.custom-file-input::after
+{
+    content: attr(data-text);
+    font-size: 14px;
+}
+.showdata
+{border-radius: 5px;}
+.agentplacingmaindiv
+{
+    text-align: center;
+}
+
+
+
+
+
+.videooverlaybox
+{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.videooverlaybox a
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+  #headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px)
+{
+    .playercountry
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .countryclubday
+    {
+        width: 100%;
+    }
+    .playerinfo table tr
+    {
+        width: 100%;
+    }
+}
+
+
+.homepage
+{
+    width: 100%;
+    max-width: 1349px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*club*/
+.stafftable
+{
+    text-transform: capitalize;
+}
+.stafftable thead
+{
+    background: #eee;
+}
+.stafftable thead th
+{
+    padding: 7px;
+}
+.stafftable img
+{
+    width: 35px;
+}
+.stafftable i
+{
+    font-size: 12px;
+}
+
+
+
+
+
+.mainstaff
+{
+    position: relative;
+    margin-bottom: 10px;
+}
+.mainstaff img
+{
+    width: 100%;
+}
+.staffdetails
+{
+    background: rgba(0, 0, 0, 0.68);
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.staffdetails p
+{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transfersnewsignings h5
+{
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+
+}
+.transfersnewsignings table tbody img
+{
+    width: 30px;
+}
+
+
+
+
+
+
+
+.tableheightfixed10record
+{
+    height: 580px;
+    overflow: auto;
+}
+
+.clubpagetabnav li
+{
+    min-width: 145px;
+}
+.clickhere
+{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}

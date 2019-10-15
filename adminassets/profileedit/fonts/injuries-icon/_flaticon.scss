@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:36
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-accident:before { content: "\f100"; }
+.flaticon-accident-1:before { content: "\f101"; }
+.flaticon-accident-10:before { content: "\f102"; }
+.flaticon-accident-11:before { content: "\f103"; }
+.flaticon-accident-12:before { content: "\f104"; }
+.flaticon-accident-13:before { content: "\f105"; }
+.flaticon-accident-14:before { content: "\f106"; }
+.flaticon-accident-15:before { content: "\f107"; }
+.flaticon-accident-16:before { content: "\f108"; }
+.flaticon-accident-17:before { content: "\f109"; }
+.flaticon-accident-18:before { content: "\f10a"; }
+.flaticon-accident-19:before { content: "\f10b"; }
+.flaticon-accident-2:before { content: "\f10c"; }
+.flaticon-accident-20:before { content: "\f10d"; }
+.flaticon-accident-21:before { content: "\f10e"; }
+.flaticon-accident-22:before { content: "\f10f"; }
+.flaticon-accident-3:before { content: "\f110"; }
+.flaticon-accident-4:before { content: "\f111"; }
+.flaticon-accident-5:before { content: "\f112"; }
+.flaticon-accident-6:before { content: "\f113"; }
+.flaticon-accident-7:before { content: "\f114"; }
+.flaticon-accident-8:before { content: "\f115"; }
+.flaticon-accident-9:before { content: "\f116"; }
+.flaticon-bite:before { content: "\f117"; }
+.flaticon-falling:before { content: "\f118"; }
+.flaticon-falling-1:before { content: "\f119"; }
+.flaticon-fire:before { content: "\f11a"; }
+.flaticon-hospitalization:before { content: "\f11b"; }
+.flaticon-insurance-agent:before { content: "\f11c"; }
+.flaticon-insurance-agent-1:before { content: "\f11d"; }
+    
+    $font-Flaticon-accident: "\f100";
+    $font-Flaticon-accident-1: "\f101";
+    $font-Flaticon-accident-10: "\f102";
+    $font-Flaticon-accident-11: "\f103";
+    $font-Flaticon-accident-12: "\f104";
+    $font-Flaticon-accident-13: "\f105";
+    $font-Flaticon-accident-14: "\f106";
+    $font-Flaticon-accident-15: "\f107";
+    $font-Flaticon-accident-16: "\f108";
+    $font-Flaticon-accident-17: "\f109";
+    $font-Flaticon-accident-18: "\f10a";
+    $font-Flaticon-accident-19: "\f10b";
+    $font-Flaticon-accident-2: "\f10c";
+    $font-Flaticon-accident-20: "\f10d";
+    $font-Flaticon-accident-21: "\f10e";
+    $font-Flaticon-accident-22: "\f10f";
+    $font-Flaticon-accident-3: "\f110";
+    $font-Flaticon-accident-4: "\f111";
+    $font-Flaticon-accident-5: "\f112";
+    $font-Flaticon-accident-6: "\f113";
+    $font-Flaticon-accident-7: "\f114";
+    $font-Flaticon-accident-8: "\f115";
+    $font-Flaticon-accident-9: "\f116";
+    $font-Flaticon-bite: "\f117";
+    $font-Flaticon-falling: "\f118";
+    $font-Flaticon-falling-1: "\f119";
+    $font-Flaticon-fire: "\f11a";
+    $font-Flaticon-hospitalization: "\f11b";
+    $font-Flaticon-insurance-agent: "\f11c";
+    $font-Flaticon-insurance-agent-1: "\f11d";

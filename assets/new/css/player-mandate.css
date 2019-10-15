@@ -1,0 +1,133 @@
+.mandatetab .nav-tabs
+{
+    border: none;
+    background: #43819d;
+    border-radius: 1.5rem;
+    /*float: right;*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 3px;
+}
+.mandatetab .nav-tabs .nav-link
+{
+	padding: 5px 50px;
+	color: #fff;
+	font-weight: bold;
+}
+.mandatetab .nav-tabs .nav-link.active
+{
+	background: #fff;
+	border-radius: 100px;
+	color: #43819d;
+}
+.mandatetab .nav-tabs .nav-link:after
+{
+	display: none;
+}
+.mandatetab .nav-tabs .nav-item
+{
+	margin-right: 0px;
+}
+
+.mandatetab .tab-content
+{
+	margin-top: 80px;
+}
+.nagotiationsmessage
+{
+	color: red;
+}
+
+
+.formmandatbtn .submitbtn,
+.formmandatbtn .acceptbtn,
+.formmandatbtn .rejectbtn,
+.formmandatbtn .negotiationsbtn
+{
+	width: 125px;
+}
+
+
+
+/**/
+
+
+
+.rejectofferlist .siglerejectoffer
+{
+	border-color: #43819d;
+	text-decoration: none;
+    border: 1px solid #43819d;
+    background: #f2f4f8;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+.rejectofferlist .siglerejectoffer:hover
+{
+	-webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+	-webkit-transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.02);
+    -webkit-box-shadow: 0px 5px 12px rgba(126,142,177,0.2);
+    box-shadow: 0px 5px 12px rgba(126,142,177,0.2);
+}
+.rejectofferlist .siglerejectoffer .titleandfrom
+{
+	display: inline-block;
+	float: left;
+}
+.rejectofferlist .siglerejectoffer .offer-header
+{
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.rejectofferlist .siglerejectoffer .offer-sub-header
+{
+	font-size: .8rem;
+    color:#979DA8;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+.rejectofferlist .siglerejectoffer .iconarrow
+{
+	margin-left: 30px;
+    display: inline-block;
+    font-size: 20px;
+    float: left;
+    margin-top: 8px;
+}
+
+
+/**/
+.headerofofferpopup p
+{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.headerofofferpopup p b
+{
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.offerdetailsmain p
+{
+	font-size: 14px;
+}
+.offerdetailsmain .offertitle
+{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	text-transform: capitalize;
+}

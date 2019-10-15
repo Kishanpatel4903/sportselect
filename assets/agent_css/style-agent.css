@@ -1,0 +1,1933 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/*.backimg
+{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}*/
+
+.title {
+    font-size: 26px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.leftsideprofile {
+    background-color: #fff;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 7px;
+}
+
+.leftsideprofile .maindiv {
+    padding: 15px;
+}
+
+.playername {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.nameandsearchbar i {
+    float: right;
+    font-size: 18px;
+}
+
+.profilesec {
+    margin-top: 15px;
+}
+
+.playerprofile {
+    margin-right: 22px;
+}
+
+.playerprofile {
+    width: 23%;
+    float: left;
+    display: inline-block;
+}
+
+.playerinfo {
+    width: 100%;
+    display: inline-block;
+}
+
+.playerprofile img {
+    border-radius: 5px;
+    width: 100%;
+    float: left;
+}
+
+.playerinfo {
+    display: inline-block;
+}
+
+.playerinfo .maindivinfo {
+    float: left;
+    width: 100%;
+}
+
+.playercountry {
+    display: inline-block;
+    float: right;
+}
+
+.playercountry img {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.playercountry span {
+    display: inline-block;
+}
+
+.fillstar {
+    color: #ecec00;
+}
+
+
+/*.playerinfo table tr
+{
+	border-bottom: 1px solid #ddd;
+}*/
+
+
+/*.playerinfo table tr:last-child
+{
+	border-bottom: none;
+}*/
+
+
+/*.playerinfo table tr td
+{
+	padding: 10px 0;
+}*/
+
+.playerinfo table tr {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-right: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.playerinfo table tr:nth-child(even) {
+    margin-right: 0;
+}
+
+.playerinfo table tr:nth-last-child(2),
+.playerinfo table tr:last-child {
+    border-bottom: none;
+}
+
+.playerinfo table tr td:first-child {
+    width: 50%;
+    float: left;
+    padding: 7px 0;
+    text-transform: capitalize;
+}
+
+.playerinfo table tr td:last-child {
+    width: 50%;
+    float: right;
+    padding: 7px 0;
+    text-align: right;
+}
+
+.contractname table {
+    width: 100%;
+}
+
+.skillsdetails {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/*.skillsdetails .firstpart,*/
+
+.skillsdetails .secondpart {
+    width: 100%;
+    display: inline-block;
+    /*padding-top: 26px;
+    padding-bottom: 129px;*/
+}
+
+.skillsdetails .secondpart {
+    /*float: right;*/
+}
+
+
+/*.skillsdetails .firstpart table,*/
+
+.skillsdetails .secondpart table {
+    width: 100%;
+}
+
+
+/*.skillsdetails .firstpart table tr,*/
+
+.skillsdetails .secondpart table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*.skillsdetails .firstpart table tr td,*/
+
+.skillsdetails .secondpart table tr td {
+    padding: 6px 0;
+}
+
+
+/*.skillsdetails .firstpart table tr td:first-child,*/
+
+.skillsdetails .secondpart table tr td:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+/*.skillsdetails .firstpart table tr:last-child,*/
+
+.skillsdetails .secondpart table tr:last-child {
+    border-bottom: none;
+}
+
+
+/*.skillsdetails .firstpart table tr td:last-child,*/
+
+.skillsdetails .secondpart table tr td:last-child {
+    text-align: right;
+}
+
+.groundimg {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+}
+
+.Leaguedetailsfirst {
+    margin-right: 12px;
+}
+
+.Leaguedetailsfirst table {
+    width: 48% !important;
+    float: left;
+}
+
+.Leaguedetailsfirst .secondtable {
+    float: right !important;
+}
+
+.Leaguedetails {
+    text-transform: capitalize;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 7px;
+    padding-bottom: 15px;
+}
+
+.Leaguedetails table {
+    width: 100%;
+}
+
+.Leaguedetails table tr th {
+    padding: 0 0 10px 0;
+}
+
+.Leaguedetails table tr th button {
+    float: right;
+}
+
+.Leaguedetails table tr {
+    border-bottom: 1px dotted #ddd;
+}
+
+.Leaguedetails table tr:last-child {
+    border-bottom: none;
+}
+
+.Leaguedetails table tr td {
+    padding: 6px;
+}
+
+.Leaguedetails table tr td:first-child {
+    text-align: left !important;
+    width: 46%;
+    font-weight: bold;
+}
+
+.Leaguedetails table tr td:last-child {
+    text-align: right;
+}
+
+
+/*.Leaguedetails table tr:last-child td
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+
+.clear {
+    clear: both;
+}
+
+.searchiconplayerinfo {
+    display: inline-block;
+    float: right;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 40px;
+    background-color: #013791;
+    border-radius: 30px;
+    padding: 0px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 300px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.userunactive {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}
+
+.availability-dots {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: green;
+    display: inline-block;
+}
+
+.playerdatabox {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    background: #fff;
+}
+
+.box-modern-circle-1 {
+    left: 0;
+    bottom: 0;
+    width: .54em;
+    height: .54em;
+    background: #daeaff;
+}
+
+.box-modern-circle-2 {
+    top: 0;
+    right: 0;
+    width: .54em;
+    height: .54em;
+    background: #f9f9ef;
+}
+
+.box-modern-circle-1,
+.box-modern-circle-2 {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.playerdatabox .first {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+    z-index: 9;
+}
+
+.playerdatabox .second {
+    font-size: 38px;
+    font-weight: bold;
+    z-index: 9;
+    margin-bottom: 0;
+}
+
+.subtext {
+    font-size: 14px;
+}
+
+.countdown {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.countdown li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.countdown li span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+ul.countdown li.seperator {
+    font-size: 27px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.countdown li p {
+    margin-bottom: 0;
+}
+
+.salary-amount {
+    color: #00e800;
+}
+
+.profileinfo {
+    margin-bottom: 15px;
+}
+
+.profileinfo table tr td:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.profileinfo table tr td:last-child {
+    float: right;
+}
+
+.signnow-player {
+    margin: 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 30px;
+    background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+    color: #fff;
+    box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+
+.signnow-player:hover {
+    background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+}
+
+.attributebtn {
+    margin: 15px 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 26px;
+    background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+    color: #fff;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+}
+
+footer {
+    background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.nav-tabs li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    min-width: 200px;
+}
+
+.nav-tabs a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5;
+}
+
+.nav-tabs li a {
+    padding-left: 0;
+}
+
+.nav-tabs li a.active {
+    background-color: transparent !important;
+    border: none;
+}
+
+.nav-tabs li .active::after {
+    background: #fff;
+}
+
+.nav-tabs li a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    outline: 1px solid transparent;
+    border-radius: 10px 10px 0 0;
+    background: #f9f9ef;
+    content: '';
+    -webkit-transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+    transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+    color: #fff;
+    font-weight: 600;
+}
+
+.modal-header .modal-title {
+    text-align: center;
+    width: 100%;
+}
+
+.modal-header .close {
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-content {
+    border-radius: 7px;
+    border: none;
+}
+
+.allbtnsame {
+    margin: 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 30px;
+    background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+    color: #fff;
+    box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+
+.allbtnsame:hover {
+    background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+}
+
+.orangebackcolor {
+    background: #0f1d71;
+}
+
+.backcolor {
+    color: #000;
+}
+
+.colorwhite {
+    color: #fff !important;
+}
+
+.groundimg {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.groundimg img {
+    width: 100%;
+}
+
+#form-invite .modal-dialog {
+    max-width: 700px;
+}
+
+.inner-form {
+    max-width: 100%;
+    width: 100%;
+}
+
+.calculater-section.Leaguedetails table tr td:last-child {
+    width: 100%;
+}
+
+.calculater-section .buttone-sum {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#wizardProfile .form-group {
+    min-height: 89px;
+}
+
+#wizardProfile input[type="date"].form-control {
+    line-height: normal;
+}
+
+.agent-card-box .agent-card-info {
+    display: inline-block;
+    width: calc(100% - 33.33%);
+}
+
+.agent-card-box .agent-card-info table tr {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.agent-card-box .countryclubday {
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+}
+
+
+/* .wrapper {
+	  position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*style label to give some more space*/
+
+.wrapper label {
+    display: block;
+    padding: 12px 0 12px 48px;
+}
+
+
+/*style and hide original checkbox*/
+
+.wrapper input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+
+/*position new box*/
+
+.wrapper input+label::before {
+    border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.tab-main {
+    background: #fff;
+    padding: 15px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 0 0 7px 7px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    z-index: 999;
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkboxOverride {
+    margin: 0;
+    position: relative;
+    width: 25px;
+}
+
+.checkboxOverride input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+.checkboxOverride label {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+}
+
+.checkboxOverride label:after {
+    border-style: none none solid solid;
+    content: "";
+    height: 5px;
+    left: 6px;
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Safari and Chrome */
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.btnPush:hover .characteristicsname {
+    margin-top: 4px;
+}
+
+
+/* Responsive CSS */
+
+@media(min-width: 992px) and (max-width: 1220px) {
+    .playerinfo {
+        width: 64%;
+    }
+    .groundimg {
+        width: 30%;
+    }
+    .groundimg img {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .playerinfo,
+    .playerprofile,
+    .groundimg,
+    .Leaguedetails {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .groundimg {
+        box-shadow: none;
+        text-align: center;
+    }
+}
+
+.technical table {
+    width: 100%;
+}
+
+.technical table tr {
+    display: inline-block;
+    width: 24%;
+    margin-right: 1%;
+}
+
+.technical table tr td {
+    width: 49% !important;
+    display: inline-block;
+}
+
+.technical table tr td:last-child {
+    text-align: right;
+}
+
+.referencepart {
+    width: 100%;
+    display: inline-block;
+}
+
+.referencepart .imgbox {
+    display: inline-block;
+    float: left;
+}
+
+.referencepart img {
+    border-radius: 7px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.referencepart .detailsbox {
+    display: inline-block;
+    float: left;
+    /*width: 60%;*/
+    width: 100%;
+}
+
+.referencepart table {
+    width: 100%;
+    /*display: inline-block;*/
+}
+
+.referencepart table tr th:first-child {}
+
+.technical h4 {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.subtab {
+    box-shadow: none;
+}
+
+.subtab .tab-pane .accordion {
+    width: 70%;
+    display: inline-block;
+}
+
+.subtab .tab-pane .playerdatabox {
+    width: 28%;
+    float: right;
+    display: inline-block;
+}
+
+.card-header {
+    background-color: #e6e6e6;
+    padding: 0.15rem;
+}
+
+.contracttab .tab-content {
+    background: transparent;
+    padding-bottom: 0;
+}
+
+.subtabtitle {
+    background: #fdbe4d;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.subtabtitle:hover {
+    color: #fff;
+}
+
+.subtabtitle.active {
+    background: #133095 !important;
+}
+
+.subtabtitlemenu {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.contracttab {
+    padding-bottom: 0;
+}
+
+.backcolordark {
+    background: #f9f9ef;
+    padding-bottom: 15px;
+}
+
+.subtab .btn-link {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+
+.contractmodal h4 {
+    text-transform: capitalize;
+}
+
+.contractmodal p {
+    font-size: 14px;
+}
+
+.showstatistics {
+    margin: 0;
+    border-radius: 100px;
+    border: none;
+    padding: 7px 12px;
+    background: linear-gradient(to right bottom, #e48f3f, #eb9a42, #f1a645, #f7b249, #fdbe4d);
+    color: #fff;
+    box-shadow: -1px 3px 6px 0 rgba(75, 81, 91, .1);
+}
+
+.characteristicsname {
+    box-shadow: 0 0 2px #eaeaea;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.characteristicsname p {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.characteristicsname p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.characteristicsname p:last-child {
+    float: right;
+}
+
+.characteristicsname p:last-child i {
+    margin-left: 5px;
+}
+
+.social-media {
+    margin-left: 10px !important;
+}
+
+.social-media i {
+    margin-right: 10px;
+    color: #000;
+}
+
+
+/*ground position fixed*/
+
+.groundplayerpotion {
+    position: relative;
+}
+
+.groundplayerpotion i {
+    position: absolute;
+    opacity: 0.4;
+}
+
+.groundplayerpotion i.active {
+    color: red;
+    opacity: 1;
+}
+
+.groundplayerpotion i.current {
+    color: blue;
+    opacity: 1;
+}
+
+.groundplayerpotion .goalkeeper {
+    right: 6%;
+    top: 47%;
+}
+
+.groundplayerpotion .centerback {
+    right: 15%;
+    top: 47%;
+}
+
+.groundplayerpotion .leftback {
+    right: 25%;
+    bottom: 20%;
+}
+
+.groundplayerpotion .rightback {
+    right: 25%;
+    top: 20%;
+}
+
+.groundplayerpotion .centermidfield1 {
+    right: 47%;
+    top: 30%;
+}
+
+.groundplayerpotion .centermidfield2 {
+    right: 47%;
+    bottom: 30%;
+}
+
+.groundplayerpotion .leftwing {
+    right: 52%;
+    bottom: 8%;
+}
+
+.groundplayerpotion .rightwing {
+    right: 52%;
+    top: 8%;
+}
+
+.groundplayerpotion .centerforward {
+    right: 70%;
+    bottom: 47%;
+}
+
+.groundplayerpotion .striker {
+    right: 80%;
+    top: 32%;
+}
+
+.groundplayerpotion .centerattack {
+    right: 80%;
+    bottom: 32%;
+}
+
+.countryclubday {
+    background: #fff;
+    border-radius: 7px;
+    display: inline-block;
+    width: 72%;
+    /*margin-top: 34px;*/
+}
+
+.countryclubday .commondthreepart {
+    display: inline-block;
+    float: left;
+    width:auto;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.commonimage {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto
+}
+
+.commonimage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+}
+
+.commondthreepart .first {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.commondthreepart .second {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.agentplacingmaindiv {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    height: 70px;
+    padding: 15px;
+}
+
+.disinb {
+    display: inline-block;
+}
+
+.agentplacingmaindiv .buttontypeeffect {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+
+.agentplacingmaindiv .disinb:last-child .buttontypeeffect {
+    margin-right: 0px !important;
+}
+
+.agentplacingmaindiv .buttontypeeffect p {
+    font-size: 14px;
+}
+
+.last-towbtn td {
+    padding-top: 15px !important;
+}
+
+.card-header button.btn-link:after {
+    font-family: 'FontAwesome';
+    content: "\f078";
+    float: right;
+}
+
+.agentplacingmaindiv .card-header .btn-link {
+    width: 100%;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+}
+
+.agentplacingmaindiv .card {
+    margin: 15px 0;
+}
+
+.agentplacingmaindiv .card-header {
+    background: #fff;
+}
+
+.agentplacingmaindiv .card-body {
+    background: #f9f9ef;
+}
+
+.producingagentmodelsame table td,
+.producingagentmodelsame table th {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.producingagentmodelsame table th {
+    background: #c1c1c1;
+}
+
+.producingagentmodelsame .modal-title {
+    text-transform: capitalize;
+}
+
+.buttontypeeffect {
+    transition: all 0.2s;
+}
+
+
+/* 3D */
+
+.btnBlueGreen.btnPush {
+    box-shadow: 0px 5px 0px 0px #e8e8e9;
+    background: #f9f9ef;
+}
+
+.btnPush:hover {
+    margin-top: 4px;
+}
+
+.btnBlueGreen.btnPush:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.characteristicspanelbody {
+    min-height: 110px;
+}
+
+.modeltablestar table {
+    width: 100%;
+}
+
+.modeltablestar table tr {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-right: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modeltablestar table tr:nth-child(even) {
+    margin-right: 0;
+}
+
+.modeltablestar table tr td:first-child {
+    width: 80%;
+    float: left;
+    padding: 7px 0;
+    text-transform: capitalize;
+}
+
+.modeltablestar table tr td:last-child {
+    width: 20%;
+    float: right;
+    padding: 7px 0;
+}
+
+.custom-file-input::after {
+    content: attr(data-text);
+    font-size: 14px;
+}
+
+.showdata {
+    border-radius: 5px;
+}
+
+.agentplacingmaindiv {
+    text-align: center;
+}
+
+
+/* =================== Style Custom ====================== */
+
+.agent-page .agent-info-tabel .Leaguedetails table {
+    width: 100% !important;
+}
+
+.agent-page .agent-info-tabel .Leaguedetails {
+    width: 100%;
+}
+
+.agent-page .agent-info-tabel .Leaguedetailsfirst,
+.agent-info-tabel .Leaguedetailssecond {
+    width: 50%;
+}
+
+.agent-page .agent-info-tabel .Leaguedetails {
+    display: flex;
+}
+
+.agent-page .Leaguedetailsfirst td[colspan] {
+    text-align: right !important;
+}
+
+.agent-page .comment-title {
+    margin-top: 30px;
+    margin-left: 0;
+}
+
+.agent-page .section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Chat CSS */
+
+.agent-page .manage_comments {
+    margin: 15px;
+    padding: 25px 10px;
+}
+
+.agent-page .comment-staar i {
+    font-size: 16px;
+}
+
+.agent-page .comment-staar.star-list {
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+.agent-page .manage_comments h4 {
+    font-size: 20px;
+}
+
+
+/* data tabel */
+
+.table-client .avatar {
+    width: 2.75rem;
+    height: 2.75rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    color: #868e96;
+    font-weight: 700;
+    vertical-align: bottom;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.table-client .avatar-sm {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.83333rem;
+    line-height: 1.5;
+}
+
+.table-client .avatar-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.avatar-blue {
+    background-color: #c8d9f1;
+    color: #467fcf;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    top: 28px;
+    left: 14px;
+    border: none;
+    box-shadow: none;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child {
+    padding-left: 48px;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details {
+    width: 100%;
+}
+
+table.dataTable>tbody>tr.child span.dtr-title {
+    min-width: 50%;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.child,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.child,
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty {
+    padding: 0.75rem 1rem 0.125rem;
+}
+
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label {
+    margin-bottom: 0;
+}
+
+.bx {
+    font-family: boxicons!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    /* -moz-osx-font-smoothing: grayscale; */
+}
+
+.bx-dots-horizontal-rounded:before {
+    content: "\f141";
+    font-family: fontawesom!important;
+}
+
+.tabel-client-list {
+    padding-bottom: 25px;
+}
+
+.page-item.active .page-link {
+    background-color: #132f93;
+    border-color: #132f94;
+}
+
+.table-client {
+    padding-top: 30px;
+}
+
+.section-title h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form-invite .signnow-player {
+    padding: 12px 53px;
+}
+
+.btn-icon {
+    background: #fff;
+}
+
+.btn-icon .bx {
+    font-size: 20px;
+}
+
+.btn .bx {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    padding: 0.25rem 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.badge {
+    padding: 0.5em 0.75em;
+}
+
+.badge-success-alt {
+    background-color: #d7f2c2;
+    color: #7bd235;
+}
+
+.table a {
+    color: #212529;
+}
+
+.table a:hover,
+.table a:focus {
+    text-decoration: none;
+}
+
+table.dataTable {
+    margin-top: 12px !important;
+}
+
+.icon>.bx {
+    display: block;
+    min-width: 1.5em;
+    min-height: 1.5em;
+    text-align: center;
+    font-size: 1.0625rem;
+}
+
+.btn {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+.avatar-blue {
+    background-color: #c8d9f1;
+    color: #467fcf;
+}
+
+.avatar-pink {
+    background-color: #fcd3e1;
+    color: #f66d9b;
+}
+
+#ms-pre-selected-options {
+    margin: 0 auto;
+}
+
+.agent-info-tabel .agentplacingmaindiv {
+    height: 55px;
+}
+
+
+/* Tab CSS */
+
+.tab-content {
+    background: #fff;
+    padding: 15px;
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+    border-radius: 0 0 7px 7px;
+}
+
+.stafftable {
+    text-transform: capitalize;
+}
+
+.stafftable thead {
+    background: #eee;
+}
+
+.stafftable thead th {
+    padding: 7px;
+}
+
+.stafftable img {
+    width: 35px;
+}
+
+.stafftable i {
+    font-size: 12px;
+}
+
+.mainstaff {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.mainstaff img {
+    width: 100%;
+}
+
+.staffdetails {
+    background: rgba(0, 0, 0, 0.68);
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.staffdetails p {
+    margin-bottom: 0px;
+}
+
+.sametableall {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.sametableall thead {
+    background: #e48f3f;
+    color: #fff;
+}
+
+.sametableall tbody tr:nth-of-type(odd) {
+    background: #f6f6f6;
+}
+
+.sametableall tbody tr {
+    background: #e9e9e9;
+}
+
+.sametableall thead tr th,
+.sametableall tbody tr td {
+    padding: 6px 12px;
+}
+
+.transfersnewsignings h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.transfersnewsignings table tbody img {
+    width: 30px;
+}
+
+.subtabintab .tab-content {
+    background: transparent;
+    padding: 15px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.subtabintab .nav-tabs {
+    box-shadow: 0px 9px 9px -7px rgba(197, 197, 197, 0.25);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.subtabintab .nav-tabs li a::after {
+    position: relative;
+}
+
+.subtabintab .nav-tabs .nav-item.show .nav-link,
+.subtabintab .nav-tabs .nav-link.active {
+    border-bottom: 3px solid #0c43b6;
+}
+
+
+/* Notificaation-Page */
+
+.nottification-form .modal-content {
+    box-shadow: -1px 9px 18px 0 rgba(75, 81, 91, .1);
+}
+
+.nottification-form .comment-staar i {
+    font-size: 20px;
+}
+
+.nottification-form .form-group:last-child {
+    margin-bottom: 0;
+}
+
+
+/* mandate Form CSS */
+
+.register {
+    background: linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+    background: -webkit-linear-gradient(to right, #0d196b, #112580, #133197, #113ead, #064cc5);
+    margin-top: 3%;
+    padding: 3%;
+}
+
+.register>.row {
+    align-items: center;
+}
+
+.register .tab-content {
+    box-shadow: none;
+}
+
+.register label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 14px;
+}
+
+.register-left {
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+
+.register-left input {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+.register-right {
+    background: #fff;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.register-left p {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+
+.register .register-form {
+    padding: 45px;
+    margin-top: 0px;
+}
+
+.btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs li {
+    min-width: auto;
+}
+
+.register .nav-tabs .nav-link {
+    padding: 0px;
+    height: auto;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+    text-align: center;
+    margin-top: 40px;
+    color: #495057;
+}
+
+.register .nav-tabs li a::after {
+    background: transparent;
+}
+
+.register .nav-tabs li .active::after {
+    background: #fff;
+}
+
+#form-mandate .modal-dialog {
+    max-width: calc(100% - 60px);
+    padding: 0 30px;
+}
+
+#form-mandate .modal-body {
+    padding: 0px;
+}
+
+#form-mandate .register {
+    margin-top: 0;
+}
+
+.register .btnRegister {
+    width: 100%;
+    max-width: 173px;
+}
+
+.agent-card-box .commonimage {
+    width: 90px;
+    height: auto;
+}
+
+.agent-card-box .commonimage img {
+    width: 75px;
+    height: 75px;
+}
+
+#placing-clubs-list ul li a {
+    color: #000;
+}
+
+#placing-clubs-list ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#placing-clubs-list ul {
+    padding: 0 22px;
+    margin: 0;
+}
+
+.background-info {
+    clear: both;
+    display: inline-block;
+}
+
+
+
+
+#toast {
+    visibility: hidden;
+    max-width: 100px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    top: 50px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #img{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+    float: left;
+    box-sizing: border-box;
+    background-color: #111;
+    color: #fff;
+}
+#toast #desc{
+    color: #fff;
+   line-height: 50px; 
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0px; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0px; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 480px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 480px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 480px} 
+    to {min-width: 480px}
+}
+
+@keyframes stay {
+    from {min-width: 480px}
+    to {min-width: 480px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 480px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 480px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 60px; opacity: 1;} 
+    to {top: 30px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 60px; opacity: 1;}
+    to {top: 30px; opacity: 0;}
+}
+#ms-pre-selected-options{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* #ms-pre-selected-options .ms-selectable:first-child{text-align:center;}
+#ms-pre-selected-options .ms-selectable:first-child ul{display:none;}
+ */
+/* Custom Scroll CSS */
+.content #myTab{flex-wrap: nowrap;}
+.content {
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	    margin-bottom: 0px !important;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	    background-color: #0c43b6 !important;
+    background-color: rgb(12, 67, 182) !important;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+	z-index:99;
+	height: 4px !important;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+	    margin: 0px auto !important;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+	    background: #d0d0d0;
+}
+	
+	
+	
+.agent-page .Leaguedetails table tr td {
+    padding: 6px 5px;
+}
+.officeaddress p{
+	font-size:14px;
+}
+/* Tab CSS */
+
+.demo-x .nav-tabs li a{
+	font-size: 15px;
+	padding: 10px 24px 10px 14px;	
+}
+.demo-x .nav-tabs li{
+	min-width: auto;
+}
+
+
+/* ----------- Responsive CSS  -----------*/
+
+@media(max-width:992px) {
+    .agent-page .agent-info-tabel .Leaguedetailsfirst,
+    .agent-info-tabel .Leaguedetailssecond {
+        width: 100%;
+    }
+    .agent-page .agent-info-tabel .Leaguedetails {
+        flex-wrap: wrap;
+    }
+	.agent-info-tabel .Leaguedetails .Leaguedetailsfirst.info-tow .section-title{display:none;}
+		.agentplacingmaindiv .disinb {
+		margin-bottom: 15px;
+	}
+		.agentplacingmaindiv {
+		height: auto;
+	}
+}
+
+
+/* End CSS 992px */
+
+@media (max-width: 767px) {
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        margin-top: 1rem;
+    }
+    div.dataTables_wrapper div.dataTables_length {
+        margin-bottom: 10px;
+    }
+	.profileeditpage .sidebar {
+		height: auto;
+	}
+	.profileeditpage .tab-content{
+		margin-top: 20px;
+	}
+	.countryclubday .commondthreepart{
+		padding: 10px;
+	}
+
+}
+
+
+/* End CSS 767px */
+
+
+@media (max-width: 500px) {
+	.playerprofile {
+    width: 100%;
+    float: none;
+	}
+	.agent-card-box .countryclubday{
+		width: 100%;	
+	}
+}

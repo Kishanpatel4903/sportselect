@@ -1,0 +1,123 @@
+@media(max-width: 767px)
+{
+	.leftsideprofile .maindiv
+	{
+		position: relative;
+		margin-bottom: 15px;
+	}
+	.searchiconplayerinfo
+	{
+		position: absolute;
+		right: 15px;
+	}
+	.searchbar:hover > .search_input
+	{
+		width: 220px;
+	}
+	.profilesec
+	{
+		margin-top: 30px;
+	}
+	.playerprofile
+	{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.playerinfo
+	{
+		width: 100%;
+	}
+	.filterskills
+	{
+		width: 100%;
+	}
+	.skillsdetails .firstpart, .skillsdetails .secondpart
+	{
+		width: 100%;
+	}
+
+	.skillsdetails
+	{
+		display: inline-block;
+		width: 100%;
+	}
+	.playerdatabox
+	{
+		margin-bottom: 30px;
+	}
+	.nav-tabs li
+	{
+		min-width: 140px;
+	}
+	.box-modern-circle-1
+	{
+		transform: translateX(0.83179px) translateY(-59.16821px) scale(2.85) !important;
+		right: 0;
+		left: unset;
+	}
+	.groundimg
+	{
+		width: 100%;
+		margin: 0;
+
+		margin-bottom: 15px;
+	}
+	.groundimg img
+	{
+		width: 100%;
+	}
+	.Leaguedetails
+	{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.Leaguedetails table
+	{
+		width: 100%;
+	}
+	.referencepart .detailsbox
+    {
+        width: 100%;
+    }
+    .technical table tr
+    {
+    	width: 100%;
+    }
+    .subtabtitlemenu
+    {
+    	padding-right: 30px;
+    }
+    .subtab .tab-pane .accordion
+    {
+    	width: 100%;
+    	margin-bottom: 15px;
+    }
+    .subtab .tab-pane .playerdatabox
+    {
+    	width: 100%;
+    }
+    .referencepart .imgbox
+    {
+    	margin-bottom: 15px;
+    	    width: 100%;
+    text-align: center;
+    }
+	
+}
+@media(max-width: 567px)
+{
+	.titlecontractend
+	{
+		position: relative;
+	}
+	.titlecontractend td
+	{
+		padding-bottom: 70px !important;
+	}
+	.numbercountdown
+	{
+		position: absolute;
+		margin-top: 40px;
+		left: 10px;
+	}
+}

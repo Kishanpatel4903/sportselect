@@ -1,0 +1,45 @@
+.agent-page .agent-info-tabel .Leaguedetails{
+    width: 100%;
+}
+.agent-page .agent-info-tabel .Leaguedetailsfirst, .agent-info-tabel .Leaguedetailssecond{
+    width: 50%;        
+}
+.agent-page .agent-info-tabel .Leaguedetails{
+    display: flex;
+}
+.agent-page .Leaguedetailsfirst td[colspan]{
+    text-align: right !important;
+}
+.agent-page .comment-title{
+    margin-top: 30px;
+margin-left: 0;
+}
+.agent-page .section-title{
+    font-size: 20px;
+font-weight: bold;
+}
+/* Chat CSS */
+.agent-page .manage_comments{
+    margin: 15px;
+padding: 25px 10px;
+}
+.agent-page .comment-staar i{
+    font-size: 16px;
+}
+.agent-page .comment-staar.star-list{
+    padding: 4px 10px;
+    display: inline-block;
+}
+.agent-page .manage_comments h4{
+    font-size: 20px;
+}
+
+
+@media(max-width:992px){
+    .agent-page .agent-info-tabel .Leaguedetailsfirst, .agent-info-tabel .Leaguedetailssecond{
+        width: 100%;        
+    }   
+    .agent-page .agent-info-tabel .Leaguedetails {
+        flex-wrap: wrap;
+    }
+}

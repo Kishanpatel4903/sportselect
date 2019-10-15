@@ -1,0 +1,66 @@
+.table-lightborder.table img{
+	max-width: 80px;
+	width: 100%;
+}
+.club-tabel .playeraboutinfotable tr{
+	width: 100%;
+}
+.playeraboutinfotable tr:last-child{
+	border-bottom: 0px solid #ddd;
+}
+.club .el-tablo .value {
+    font-size: 1.5rem;
+}
+.club .profiledetailboxright .table-lightborder .table thead th {
+    border-bottom: 1px solid #999;
+}
+.club .profiledetailboxright .table-lightborder .table th, .club .profiledetailboxright .table-lightborder .table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(83, 101, 140, 0.21);
+	font-size:14px;
+}
+.clickhere {
+   position: absolute;
+top: 0;
+right: 5px;
+font-size: 10px;
+cursor: pointer;
+color: rgba(0,0,0,0.4);
+text-transform: capitalize;
+}
+.pointer{
+	cursor: pointer;
+}
+#registeredfans .modal-content, #clubsponsors .modal-content{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.club .playeraboutinfotable span.info{
+	display: inline-block;
+	vertical-align: middle;
+	border-bottom: 1px dotted #047bf8;
+	color: #047bf8;
+	cursor: pointer;
+}
+.club .profiledetailboxright .table-lightborder thead > tr > td:first-child{
+	border-top: 0px;
+}
+
+.ms-container{
+	margin:0 auto;
+}
+#semd-resume-for-club .modal-dialog {
+	max-width: 500px;
+}
+/* .leftsidebar {
+	overflow: auto;
+}
+.logopart{
+	position: fixed;
+	width: 260px;
+	z-index: 1;
+}
+.profilepart{
+	margin-top: 55px;
+} */

@@ -1,0 +1,49 @@
+.mandatetab .nav-tabs
+{
+    border: none;
+    background: #43819d;
+    border-radius: 1.5rem;
+    /*float: right;*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 3px;
+}
+.mandatetab .nav-tabs .nav-link
+{
+	padding: 5px 50px;
+	color: #fff;
+	font-weight: bold;
+}
+.mandatetab .nav-tabs .nav-link.active
+{
+	background: #fff;
+	border-radius: 100px;
+	color: #43819d;
+}
+.mandatetab .nav-tabs .nav-link:after
+{
+	display: none;
+}
+.mandatetab .nav-tabs .nav-item
+{
+	margin-right: 0px;
+}
+
+.mandatetab .tab-content
+{
+	margin-top: 80px;
+}
+.nagotiationsmessage
+{
+	color: red;
+}
+
+
+.formmandatbtn .submitbtn,
+.formmandatbtn .acceptbtn,
+.formmandatbtn .rejectbtn,
+.formmandatbtn .negotiationsbtn
+{
+	width: 125px;
+}

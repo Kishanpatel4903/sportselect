@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>adminassets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>adminassets/fonts/injuries-icon/flaticon.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/commoncss.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>adminassets/css/magnific-popup.css">
+</head>
+<body>
+  <?php
+if(isset($userdata) && !empty($userdata)):
+   $temp = array(); foreach ($userdata as $key => $value):
+ $temp[] = $value->first_name;
+endforeach; endif; ?>
+<input type="hidden" name="userdata" class="userdata" value='<?= json_encode($temp) ?>'>
+<div class="homepage">
+  <header>
+   <nav class="navbar navbar-inverse navbar-expand-xl navbar-dark">
+    <div class="navbar-header d-flex col">
+     <a class="navbar-brand" href="<?= base_url() ?>"><i class="fa fa-cube"></i><b>Sportselect</b></a>      
+     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+       <span class="navbar-toggler-icon"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+   </div>
+   <!-- Collection of nav links, forms, and other content for toggling -->
+   <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <form class="navbar-form form-inline">
+     <div class="input-group search-box">                        
+      <input type="text" id="tags" class="form-control" placeholder="Search here...">
+      <span class="input-group-addon"><i class="fa fa-search"></i></span>
+    </div>
+  </form>
+  <ul class="nav navbar-nav navbar-right ml-auto">
+   <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-home"></i><span>Home</span></a></li>
+   <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pie-chart"></i><span>Transfer Market</span></a></li>
+   <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope"></i><span>Messages</span></a></li>
+   <li class="nav-item dropdown">
+    <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i><span>Notifications</span></a>
+  </a>
+  <ul class="dropdown-menu noti-boxmenu">
+   <li class="head text-light orangebackcolor">
+    <div class="row">
+     <div class="col-lg-12 col-sm-12 col-12">
+      <span class="colorwhite">Notifications (3)</span>
+      <a href="" class="float-right colorwhite">Mark all as read</a>
+    </div>
+  </li>
+  <li class="notification-box">
+   <div class="row">
+     <div class="col-lg-3 col-sm-3 col-3 text-center">
+       <img src="<?php echo base_url(); ?>adminassets/images/user.jpg" class="w-50 rounded-circle">
+     </div>    
+     <div class="col-lg-8 col-sm-8 col-8">
+       <strong class="text-info">David John</strong>
+       <div>
+         Lorem ipsum dolor sit amet, consectetur
+       </div>
+       <small class="text-warning">1/1/2019, 15:00</small>
+     </div>    
+   </div>
+ </li>
+ <li class="notification-box bg-gray">
+   <div class="row">
+     <div class="col-lg-3 col-sm-3 col-3 text-center">
+       <img src="<?php echo base_url(); ?>adminassets/images/user.jpg" class="w-50 rounded-circle">
+     </div>    
+     <div class="col-lg-8 col-sm-8 col-8">
+       <strong class="text-info">David John</strong>
+       <div>
+         Lorem ipsum dolor sit amet, consectetur
+       </div>
+       <small class="text-warning">1/1/2019, 15:00</small>
+     </div>    
+   </div>
+ </li>
+ <li class="notification-box">
+   <div class="row">
+     <div class="col-lg-3 col-sm-3 col-3 text-center">
+       <img src="<?php echo base_url(); ?>adminassets/images/user.jpg" class="w-50 rounded-circle">
+     </div>    
+     <div class="col-lg-8 col-sm-8 col-8">
+       <strong class="text-info">David John</strong>
+       <div>
+         Lorem ipsum dolor sit amet, consectetur
+       </div>
+       <small class="text-warning">1/1/2019, 15:00</small>
+     </div>    
+   </div>
+ </li>
+ <li class="footer orangebackcolor text-center">
+   <a href="" class="text-light colorwhite">View All</a>
+ </li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+ <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">
+  <?php if(isset($data->profile_img) && !empty($data->profile_img)){ ?>
+  <img src="<?php echo base_url(); ?>uploads/<?= $data->profile_img ?>" class="avatar" alt="Avatar">
+<?php }else{ ?>
+  <img src="<?php echo base_url(); ?>adminassets/images/prof.jpg" class="avatar" alt="Avatar">
+<?php } ?>
+<?= $data->first_name.' '.$data->last_name; ?>
+<b class="caret"></b></a>
+<ul class="dropdown-menu">
+ <li><a href="<?= base_url().'myprofile' ?>" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></li>
+               <!--  <li><a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></li>
+                <li><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></li> -->
+                <li class="divider dropdown-divider"></li>
+                <li><a href="<?= base_url().'signup/logout' ?>" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="backimg mt-3">
+     <div class="container-fluid">
+      <div class="row">
+               <!-- <div class="col-md-12">
+                  <p class="title">Profile</p>
+                </div> -->
+                <div class="col-md-6">
+                  <div class="leftsideprofile">
+                   <div class="maindiv">
+                    <div class="nameandsearchbar">
+                     <p class="playername"><span class="availability-dots" title="Available"></span>
+                      <?php echo $data->first_name.' '.$data->last_name; ?>
+                      <span class="userunactive">(In Active)</span><a href="<?php echo base_url(); ?>myprofile/editprofile/#tab-2"><i class="fa fa-pencil" title="edit playerdata" style="color: #064cc4;margin-left: 15px;"></i></a>
+                    </p>
+                    <div class="playercountry">
+                      <!-- <img src="<?php echo base_url(); ?>adminassets/images/flag.jpg"> -->
+                      <span>
+                        <i class="fa fa-star fillstar" aria-hidden="true"></i>
+                        <i class="fa fa-star fillstar" aria-hidden="true"></i>
+                        <i class="fa fa-star fillstar" aria-hidden="true"></i>
+                        <i class="fa fa-star fillstar" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </span>
+                      <span class="social-media">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </span>
+                    </div>
+                           <!-- <div class="searchiconplayerinfo">
+                              <div class="searchbar">
+                                 <input class="search_input" type="text" name="" placeholder="Search...">
+                                 <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="clear"></div>
+                          <div class="profilesec">
+                           <div class="playerprofile">
+                            <?php if(isset($data->profile_img) && !empty($data->profile_img)){ ?>
+                            <img src="<?php echo base_url(); ?>uploads/<?= $data->profile_img ?>">
+                          <?php }else{ ?>
+                            <img src="<?php echo base_url(); ?>adminassets/images/prof.jpg">
+                          <?php } ?>
+                        </div>
+                        <div class="countryclubday">
+                          <div class="commondthreepart">
+                           <div class="commonimage">
+                            <img src="<?php echo base_url(); ?>adminassets/images/flag.jpg">
+                          </div>
+                          <p class="first">caneda</p>
+                          <p class="second">contry</p>
+                        </div>
+                        <div class="commondthreepart">
+                         <div class="commonimage">
+                          <img src="<?php echo base_url(); ?>adminassets/images/liverpool-football-club.png">
+                        </div>
+                        <p class="first">fulham</p>
+                        <p class="second">club name</p>
+                      </div>
+                      <div class="commondthreepart">
+                       <div class="commonimage">
+                        <img src="<?php echo base_url(); ?>adminassets/images/contract-icon.png">
+                      </div>
+                      <ul class="first countdown">
+                        <li>
+                         <span class="days">00</span><span><b> Days</b></span>
+                       </li>
+                     </ul>
+                     <p class="second">contract</p>
+                   </div>
+                 </div>
+                 <div class="playerinfo">
+                  <div class="maindivinfo">
+                   <div class="profileinfo">
+                    <table>
+                     <tr>
+                      <td>Signing rate</td>
+                      <td title="Signing rate"><?= (1/$data->offeraccept)*100 ?>%</td>
+                    </tr>
+                    <tr>
+                      <td>Reputation </td>
+                      <td>World class</td>
+                    </tr>
+                    <tr>
+                      <td>Agent name</td>
+                      <td><?= $data->agentname ?></td>
+                    </tr>
+                    <tr>
+                      <td>Preferred side</td>
+                      <td><?= $data->prefer_side ?></td>
+                    </tr>
+                    <tr>
+                      <td>Position(Primary)</td>
+                      <td><?= $data->first_position ?></td>
+                    </tr>
+                    <tr>
+                      <td>Position(alternative)</td>
+                      <td><?= $data->second_position ?></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           <div class="col-md-6">
+            <div class="videooverlaybox">
+             <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn popup-modal"></a>
+             <iframe width="100%" height="100px" src="https://www.youtube.com/embed/jssO8-5qmag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="min-height: 240px;"></iframe>
+           </div>
+           <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+             <iframe class="embed-responsive-item" width="600" height="480" src="https://www.youtube.com/embed/jssO8-5qmag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+           </div>
+         </div>
+         <div class="col-md-6">
+          <div class="row">
+           <div class="col-md-6">
+            <div class="playerdatabox">
+             <div class="mainbox">
+              <p class="first">Age</p>
+              <p class="second">21</p>
+              <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(124.83179px) translateY(-59.16821px) scale(2.85)"></div>
+              <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="playerdatabox">
+           <div class="mainbox">
+            <p class="first">Weight</p>
+            <p class="second"><?= $data->weight ?><span class="subtext">Kg</span></p>
+            <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(124.83179px) translateY(-59.16821px) scale(2.85)"></div>
+            <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="playerdatabox">
+         <div class="mainbox">
+          <p class="first">Height</p>
+          <p class="second"><?= $data->height ?></p>
+          <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(124.83179px) translateY(-59.16821px) scale(2.85)"></div>
+          <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="playerdatabox">
+       <div class="mainbox">
+        <p class="first">Injuries</p>
+        <p class="second"><?= $data->injuries ?></p>
+        <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(124.83179px) translateY(-59.16821px) scale(2.85)"></div>
+        <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+  <div class="agentplacingmaindiv">
+    <div class="row">
+     <div class="disinb">
+      <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen">
+       <p><a href="<?= base_url().'myprofile/printcv/'.$data->_User_ID ?>" id="print_cv">Print CV</a></p>
+       <p></p>
+     </div>
+   </div>
+   <div class="disinb">
+    <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen">
+     <p><a href="<?= $data->statisticslink ?>" target="_blank">show statistics</a></p>
+     <p></p>
+   </div>
+ </div>
+ <div class="disinb">
+  <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen" data-toggle="modal" data-target="#producingagentmodel">
+   <p><a>Show producing agent</a></p>
+   <p></p>
+ </div>
+</div>
+<div class="disinb">
+  <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen" data-toggle="modal" data-target="#placingagentsmodel">
+   <p><a>Show placing agent</a></p>
+   <p></p>
+ </div>
+</div>
+</div>
+</div>
+<div class="groundimg groundplayerpotion">
+ <img src="<?php echo base_url(); ?>adminassets/images/ground.png">
+ <i class="fa fa-circle goalkeeper" aria-hidden="true"></i>
+ <i class="fa fa-circle centerback" aria-hidden="true"></i>
+ <i class="fa fa-circle leftback" aria-hidden="true"></i>
+ <i class="fa fa-circle rightback active" aria-hidden="true" title="Right back (Alternative Position)"></i>
+ <i class="fa fa-circle centermidfield1" aria-hidden="true"></i>
+ <i class="fa fa-circle centermidfield2 current" aria-hidden="true" title="center midfield B (Primary Position)"></i>
+ <i class="fa fa-circle leftwing" aria-hidden="true"></i>
+ <i class="fa fa-circle rightwing" aria-hidden="true"></i>
+ <i class="fa fa-circle centerforward" aria-hidden="true"></i>
+ <i class="fa fa-circle striker" aria-hidden="true"></i>
+ <i class="fa fa-circle centerattack" aria-hidden="true"></i>
+</div>
+<div class="rightsideprofile">
+ <div class="Leaguedetails Leaguedetailsfirst">
+  <table>
+   <tr>
+    <th>Player Data <a href="<?php echo base_url(); ?>myprofile/editprofile/#tab-2"><i class="fa fa-pencil" title="edit playerdata" style="color: #064cc4;margin-left: 15px;"></i></a></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Availability</td>
+    <td><span class="availability-dots" title="Available"></span></td>
+  </tr>
+  <tr>
+    <td>Living</td>
+    <td><?= $data->service_location ?></td>
+  </tr>
+  <tr>
+    <td>Spoken languages</td>
+    <td><?= $data->user_language ?></td>
+  </tr>
+  <tr>
+    <td>Family status</td>
+    <td><?= $data->family_status ?></td>
+  </tr>
+  <tr>
+    <td>jersey number</td>
+    <td><?= $data->jersey_number ?></td>
+  </tr>
+  <tr>
+    <td>Status</td>
+    <td>Professional</td>
+  </tr>
+  <tr>
+    <td>academy</td>
+    <td><?= $data->academy ?></td>
+  </tr>
+  <tr class="last-towbtn">
+  </tr>
+</table>
+<table class="secondtable mt-5">
+ <tr>
+  <th colspan="2">Personal Data <a href="<?php echo base_url(); ?>myprofile/editprofile/#tab-2"><i class="fa fa-pencil" title="edit playerdata" style="color: #064cc4;margin-left: 15px;"></i></a></th>
+  <!-- <th><button class="signnow-player">Print CV</button></th> -->
+</tr>
+<tr>
+  <td>outfitter</td>
+  <td><?= $data->outfitter ?></td>
+</tr>
+<tr>
+  <td>shoe size</td>
+  <td><?= $data->shoesize ?></td>
+</tr>
+<tr>
+  <td>salary</td>
+  <td><span class="salary-amount" title="this is accepted salary">$<?= $data->salary ?> / yearly </span></td>
+</tr>
+<tr>
+  <td colspan="2">
+  </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+   <li class="nav-item">
+    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#playerbio" role="tab" aria-controls="playerbio" aria-selected="false">Reference</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Contract</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mandate" role="tab" aria-controls="contact" aria-selected="false">Mandate</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Characteristics</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Financial" role="tab" aria-controls="contact" aria-selected="false">Financial</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#market" role="tab" aria-controls="contact" aria-selected="false">market</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+ <div class="tab-pane fade" id="mandate" role="tabpanel" aria-labelledby="profile-tab">
+ </div>
+ <div class="tab-pane fade show active" id="playerbio" role="tabpanel" aria-labelledby="profile-tab">
+  <div class="referencepart">
+                           <!-- <div class="imgbox">
+                              <img src="<?php echo base_url(); ?>adminassets/images/reference.png">
+                            </div> -->
+                            <div class="detailsbox">
+                              <!--  -->
+                              <div class="row">
+                               <div class="col-md-4">
+                                <table class="sametableall">
+                                 <thead>
+                                  <th>Title</th>
+                                  <th>Discription</th>
+                                </thead>
+                                <tbody>
+                                 <tr>
+                                  <td>player name</td>
+                                  <td><?= $refdata->first_name.' '.$refdata->last_name ?></td>
+                                </tr>
+                                <tr>
+                                  <td>player id</td>
+                                  <td><?= $refdata->id ?></td>
+                                </tr>
+                                <tr>
+                                  <td>characteristics</td>
+                                  <td>lorem ipsum...<a href="#">more</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contracttab tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Make Loan Bid </button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Make Transfer bid</button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Add to shotlist </button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Scout player </button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Sign now</button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Offer contract </button>
+                    <button class="attributebtn" data-toggle="modal" data-target="#exampleModalCenter">Make Contract/mandate offer </button>
+                    <div class=" mt-5 backcolordark">
+                     <div class="row">
+                      <div class="col-12 col-sm-3 subtabtitlemenu">
+                       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link subtabtitle active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">past</a>
+                        <a class="nav-link subtabtitle" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">preent</a>
+                        <a class="nav-link subtabtitle" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">future </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                     <div class="tab-content subtab" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                       <div class="accordion" id="accordionExample">
+                        <div class="card">
+                         <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             Show rejected Offer
+                           </button>
+                         </h2>
+                       </div>
+                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+                         <ul>
+                          <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+                          <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                   <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       transfer history
+                     </button>
+                   </h2>
+                 </div>
+                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+                   <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="playerdatabox">
+            <div class="mainbox">
+             <p class="first">Club intrested</p>
+             <p class="second">21</p>
+             <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(244.83179px) translateY(-59.16821px) scale(2.85)"></div>
+             <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+           </div>
+         </div>
+       </div>
+       <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+         <div class="accordion" id="accordionExample">
+          <div class="card">
+           <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Show rejected Offer
+             </button>
+           </h2>
+         </div>
+         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+           <ul>
+            <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+     <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         transfer history
+       </button>
+     </h2>
+   </div>
+   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div class="card-body">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+     <ul>
+      <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<div class="playerdatabox">
+  <div class="mainbox">
+   <p class="first">Club intrested</p>
+   <p class="second">21</p>
+   <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(244.83179px) translateY(-59.16821px) scale(2.85)"></div>
+   <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+ </div>
+</div>
+</div>
+<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+ <div class="accordion" id="accordionExample">
+  <div class="card">
+   <div class="card-header" id="headingOne">
+    <h2 class="mb-0">
+     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       Show rejected Offer
+     </button>
+   </h2>
+ </div>
+ <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+  <div class="card-body">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+   <ul>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="card">
+ <div class="card-header" id="headingTwo">
+  <h2 class="mb-0">
+   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+     transfer history
+   </button>
+ </h2>
+</div>
+<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+  <div class="card-body">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+   <ul>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="card">
+ <div class="card-header" id="headingthree">
+  <h2 class="mb-0">
+   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+     pending offers
+   </button>
+ </h2>
+</div>
+<div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
+  <div class="card-body">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. 
+   <ul>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 1</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 2</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 3</a></li>
+    <li><a href="#" data-toggle="modal" data-target="#offerrejected">offer 4</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="playerdatabox">
+  <div class="mainbox">
+   <p class="first">Club intrested</p>
+   <p class="second">21</p>
+   <div class="box-modern-circle box-modern-circle-1" style="transform: translateX(244.83179px) translateY(-59.16821px) scale(2.85)"></div>
+   <div class="box-modern-circle box-modern-circle-2" style="transform: scale(8.02832);left: -9px;top: 93% !important;"></div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade characteristicspanelbody" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <div class="technical">
+   <div class="row">
+    <div class="col-md-3">
+     <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen" data-toggle="modal" data-target="#personalcharacteristics">
+      <p><a>Personal Characteristics</a></p>
+      <p>2.8<i class="fa fa-star fillstar" aria-hidden="true"></i></p>
+    </div>
+  </div>
+  <div class="col-md-3">
+   <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen"  data-toggle="modal" data-target="#individualtechnique">
+    <p><a>Individual technique</a></p>
+    <p>2.8<i class="fa fa-star fillstar" aria-hidden="true"></i></p>
+  </div>
+</div>
+<div class="col-md-3">
+ <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen"  data-toggle="modal" data-target="#tacticalabilities">
+  <p><a>Tactical abilities</a></p>
+  <p>2.8<i class="fa fa-star fillstar" aria-hidden="true"></i></p>
+</div>
+</div>
+<div class="col-md-3">
+ <div class="characteristicsname buttontypeeffect btnPush btnBlueGreen"  data-toggle="modal" data-target="#physicalabilities">
+  <p><a>Physical abilities </a></p>
+  <p>2.8<i class="fa fa-star fillstar" aria-hidden="true"></i></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="Financial" role="tabpanel" aria-labelledby="profile-tab">
+  <div class=" mt-5 backcolordark">
+   <div class="row">
+    <div class="col-12 col-sm-3 subtabtitlemenu">
+     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link subtabtitle active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">insurance </a>
+    </div>
+  </div>
+                              <!--  <div class="col-12 col-sm-9">
+                                 <div class="tab-content subtab" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                       
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                       
+                                    </div>
+                                    
+                                 </div>
+                               </div> -->
+                             </div>
+                           </div>
+                         </div>
+                         <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </section>
+               <div class="modal fade" id="offerrejected" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content contractmodal">
+                   <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h4>offer detail</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. </p>
+                    <h4>provide by</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. </p>
+                    <h4>Rejected reason</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed tristique felis. Mauris cursus laoreet nisi, eu maximus eros aliquam consequat. Pellentesque sit amet tellus elit. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade modeltablestar" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis augue, aliquam ac odio sed, lobortis congue tortor.</p>
+                <p>Duis velit tortor, hendrerit vel viverra et, ultricies eu nibh. Nunc auctor, lacus at rutrum ultrices, lacus nibh semper lacus, a laoreet dolor enim non eros. Cras ut viverra lectus, nec volutpat mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque ut eros non ipsum tristique tempus sed sed tellus. Praesent tincidunt vitae sem sit amet tincidunt.</p>
+                <p> Vestibulum a varius leo. Praesent imperdiet faucibus quam sit amet maximus. Duis scelerisque lacus et est dictum auctor. Nunc nisl enim, ultricies quis purus vel, dignissim volutpat lectus. Ut orci orci, condimentum vitae maximus id, facilisis a mi.</p>
+                <button class="allbtnsame">Sign Player <span>$149</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modeltablestar" id="tacticalabilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+           <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">technical</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table>
+             <tr>
+              <td>marking</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>tackling</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>positioning</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>movement</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>finishing</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>dribbling</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>long shorts</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>crossiing</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>control</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>long passing</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>passing</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>penalties</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>free kicks</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>corners</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+            <tr>
+              <td>creativity</td>
+              <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade modeltablestar" id="individualtechnique" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">mental</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <table>
+       <tr>
+        <td>aggression</td>
+        <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+      </tr>
+      <tr>
+        <td>composure</td>
+        <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+      </tr>
+      <tr>
+        <td>concentration</td>
+        <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+      </tr>
+      <tr>
+        <td>flair</td>
+        <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+      </tr>
+      <tr>
+        <td>leadership</td>
+        <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+<div class="modal fade modeltablestar" id="physicalabilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalCenterTitle">physical</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table>
+     <tr>
+      <td>aerial ability</td>
+      <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+    </tr>
+    <tr>
+      <td>pace</td>
+      <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+    </tr>
+    <tr>
+      <td>stamina</td>
+      <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+    </tr>
+    <tr>
+      <td>strength</td>
+      <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+    </tr>
+    <tr>
+      <td>work rate</td>
+      <td><span>2.5 <i class="fa fa-star fillstar" aria-hidden="true"></i></span></td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade producingagentmodelsame" id="producingagentmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalCenterTitle">producing agent</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table  width="100%;" class="sametableall">
+     <thead>
+      <tr>
+        <th>country</th>
+        <th>name</th>
+        <th>date</th>
+        <th>more</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>india</td>
+      <td>john smith</td>
+      <td>02 apr 2019</td>
+      <td>more</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade producingagentmodelsame" id="placingagentsmodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalCenterTitle">placing agent</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <table width="100%;" class="sametableall">
+     <thead>
+      <tr>
+       <th>country</th>
+       <th>date</th>
+       <th>more</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+      <td>indian</td>
+      <td>02 apr 2019</td>
+      <td>more</td>
+    </tr>
+    <tr>
+      <td>indian</td>
+      <td>02 apr 2019</td>
+      <td>more</td>
+    </tr>
+    <tr>
+      <td>indian</td>
+      <td>02 apr 2019</td>
+      <td>more</td>
+    </tr>
+    <tr>
+      <td>indian</td>
+      <td>02 apr 2019</td>
+      <td>more</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<footer>
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-12">
+    <p>Copyright &copy; 2019 by Sportselect</p>
+  </div>
+</div>
+</div>
+</footer>
+</div>
+<script type="text/javascript" src="<?php echo base_url(); ?>adminassets/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>adminassets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>adminassets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>adminassets/js/jquery.downCount.js"></script> 
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    var data = $('.userdata').val();
+    var availableTags = $.parseJSON(data);
+    $( "#tags" ).autocomplete({
+      source: availableTags,
+      select: function (a, b) {
+        $.ajax({
+          url: 'inquiryajax.php',
+          url:'<?=base_url()?>/myprofile/userDetails',
+          type: "POST",
+          cache:false,
+          data: {
+            'name':b.item.label,
+          },
+          success: function (data) {
+            console.log(data);
+            var newDoc = document.open("text/html", "replace");
+            newDoc.write(data);
+            newDoc.close();
+                    //window.location = "inquiry?status=true";
+                  }
+                });
+      }
+    });
+  } );
+</script>
+
+
+
+
+<script type="text/javascript">
+ $( document ).ready(function() {
+  $('#headerVideoLink').magnificPopup({
+   type:'inline',
+           midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+         });
+
+});
+
+ $('.countdown').downCount({
+  date: '09/09/2020 12:00:00',
+  offset: +10
+});
+</script> 
+</body>
+</html>

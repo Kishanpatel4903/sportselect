@@ -1,0 +1,261 @@
+@media(max-width: 1024px) and (min-width: 768px)
+{
+	.leftsidebar
+	{
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4D75), to(#31395B));
+		background-image: linear-gradient(to bottom, #3D4D75 0%, #31395B 100%);
+		background-repeat: repeat-x;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#1c2e7b));
+		background-image: linear-gradient(to bottom, #1c4cc3 0%, #1c2e7b 100%);
+		background-repeat: repeat-x;
+		color: rgba(255,255,255,0.9);
+		width: 70px;
+	}
+	.detailsofprofile,
+	.logopart b,
+	.profilemoreoption,
+	.menunamespan,
+	.leftsidebar nav ul li .dropdown-toggle::after
+	{
+		display: none;
+	}
+	.logopart
+	{
+		padding: 5px;
+		display: flex;
+		vertical-align: middle;
+
+	}
+	.logopart i
+	{
+		font-size: 30px;
+		margin: auto;
+	}
+	.logopart a
+	{
+		margin: 0 auto;
+		display: inline-block;
+		height: auto;
+	}
+	.profilepart
+	{
+		padding: 5px;
+		display: flex;
+		width: 100%;
+		vertical-align: middle;
+	}
+	.profilepart .profileimg
+	{
+		margin: auto;
+	}
+
+	.leftsidebar nav
+	{
+		padding: 15px 0;
+		text-align: center;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link
+	{
+		padding: 15px;
+	}
+	.leftsidebar nav ul li
+	{
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+	}
+	.leftsidebar nav ul li a i
+	{
+		margin-right: 0;
+		font-size: 25px;
+	}
+
+
+
+
+
+
+	.rightpart 
+	{
+		width: 100%;
+		padding-left: 70px;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px) and (min-width: 768px)
+{
+	.mdm-none
+	{
+		display: none;
+	}
+}
+
+
+
+@media(max-width: 1024px)
+{
+	.profiledetailbox,
+	.profiledetailboxright
+	{
+		width: 100% !important;
+		padding: 1rem 0rem 2rem 0 !important;
+		border: none !important;
+	}
+	.contryandclubname
+	{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.fourboxprofile
+	{
+		margin-bottom: 30px;
+	}
+	.personaldatafourbox
+	{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 767px)
+{
+	.mb-none
+	{
+		display: none;
+	}
+	.leftsidebar
+	{
+		min-height: auto;
+		height: 60px;
+		position: relative;
+		padding: 0.5rem;
+		width: 100%;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4D75), to(#31395B));
+		background-image: linear-gradient(to bottom, #3D4D75 0%, #31395B 100%);
+		background-repeat: repeat-x;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#1c2e7b));
+		background-image: linear-gradient(to bottom, #1c4cc3 0%, #1c2e7b 100%);
+		background-repeat: repeat-x;
+		color: rgba(255,255,255,0.9);
+		border: none;
+		display: block;
+		z-index: 999;
+	}
+	.topbarmain
+	{
+		z-index: 991;
+	}
+	.logopart
+	{
+		border-bottom: none;
+		padding: 0 15px;
+		display: inline-block;
+		height: 44px;
+		font-size: 24px;
+		background: transparent;
+		position: fixed;
+		top: 5px;
+		left: 0;
+	}
+	.profilepart
+	{
+		display: inline-block;
+		padding: 0;
+		float: right;
+		width: auto;
+	}
+	.leftsidebar nav
+	{
+		display: inline-block;
+		float: right;
+		padding: 0;
+		position: unset;
+	}
+	.leftsidebar nav .navbar-toggler
+	{
+		color: #fff;
+		padding: 10px;
+	}
+	.leftsidebar nav .navbar-toggler .navbar-toggler-icon
+	{
+		height: auto;
+	}
+	.navbar-collapse
+	{
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4D75), to(#31395B));
+		background-image: linear-gradient(to bottom, #3D4D75 0%, #31395B 100%);
+		background-repeat: repeat-x;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#1c2e7b));
+		background-image: linear-gradient(to bottom, #1c4cc3 0%, #1c2e7b 100%);
+		background-repeat: repeat-x;
+		color: rgba(255,255,255,0.9);
+		position: absolute;
+		top: 60px;
+		left: 0px;
+		width: 100%;
+		z-index: 999999;
+		padding: 15px;
+	}
+	.detailsofprofile,
+	.profilemoreoption
+	{
+		display: none;
+	}
+	.rightpart
+	{
+		width: 100%;
+		padding: 0;
+	}
+	.playeraboutinfotable tr
+	{
+		width: 100% !important;
+		margin-right: 0 !important;
+	}
+	.element-wrapper
+	{
+		padding-bottom: 15px !important;
+	}
+	.element-wrapper .element-box
+	{
+		margin-bottom: 0;
+	}
+	.profiledetailbox
+	{
+		padding-bottom: 0 !important;
+	}
+}
+
+
+@media(max-width: 575px)
+{
+	.personaldatafourbox .personaldetasinglebox
+	{
+		border-left: 1px solid rgba(0,0,0,0.1);
+		border-right: 1px solid rgba(0,0,0,0.1);
+	}
+	.personaldatafourbox .personaldetasinglebox:first-child
+	{
+		border-bottom: none;
+	}	
+	.addfriends
+	{
+		padding: 15px;
+    text-align: left !important;
+	}
+}
+@media(max-width: 420px)
+{
+	.searchbar input
+	{
+		width: 181px;
+	}
+	
+}

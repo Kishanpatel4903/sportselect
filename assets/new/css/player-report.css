@@ -1,0 +1,40 @@
+.commontable
+{
+	width: 100%;
+	text-align: center;
+}
+.commontable th,
+.commontable td
+{
+	vertical-align: middle;
+}
+.commontable thead tr th:first-child, 
+.commontable tfoot tr th:first-child {
+    border-left: 1px solid #999;
+}
+.commontable thead tr th:last-child,
+.commontable tfoot tr th:last-child {
+    border-right: 1px solid #999;
+}
+.commontable thead tr th,
+.commontable tfoot tr th {
+    text-align: center;
+    border-top: 1px solid #999 !important;
+    border-bottom: 1px solid #999;
+    background-color: rgba(0,0,0,0.05);
+    font-size: .63rem;
+    text-transform: uppercase;
+    border-top: none;
+}
+.commontable th {
+    font-weight: 500;
+}
+.commontable th, 
+.commontable td {
+    border: 1px solid rgba(83,101,140,0.33);
+    padding: .75rem;
+    border-top: 1px solid rgba(83,101,140,0.33);
+}
+.commontable tbody tr:nth-of-type(odd) {
+    background-color: rgba(94,130,152,0.05);
+}
